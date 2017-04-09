@@ -57,7 +57,7 @@ Here is a list of 'machine names' for Q6 images. Use the 'machine name' based on
 Example:
  
  
-    MACHINE=jciq6 source setup-environment build-Q6
+    MACHINE=jciq6 source setup-environment build-jciq6
     MACHINE=jciq6 bitbake core-image-base
  
 
@@ -67,7 +67,7 @@ Output directories and file names depend on what you build. Following example is
  
     umount /dev/sdb?
     gunzip -c ~/fsl-community-bsp/build-Q6/tmp/deploy/images/jciq6/core-image-base-jciq6.sdcard.gz > ~/fsl-community-bsp/build-Q6/tmp/deploy/images/jciq6/core-image-base-jciq6.sdcard
-    sudo dd if=~/fsl-community-bsp/build-Q6/tmp/deploy/images/jciq6/core-image-base-jciq6.sdcard of=/dev/sdb
+    sudo dd if=~/fsl-community-bsp/build-Q6/tmp/deploy/images/jciq6/core-image-base-jciq6.sdcard of=/dev/sdb bs=1M && sync
     umount /dev/sdb?
      
 # Testing it on Q6 
@@ -75,8 +75,8 @@ Output directories and file names depend on what you build. Following example is
 To test your SD card, plug in the card and reset the Q6 board (press "Reset" button).  
 
 	1) U-Boot will load & execute from the base of the SD Card.
-	2) U-Boot will load & execute optional boot script from SD partition 1 (boot_Q6.scr)
+	2) U-Boot will load & execute optional boot script from SD partition 1 (boot_jciq6.scr)
 	3) U-Boot will load kernel image (zImage) from SD partition 1
-	4) U-Boot will load Device Tree (imx6q6-Q6.dtb) from SD partition 1
+	4) U-Boot will load Device Tree (imx6q-jciq6.dtb) from SD partition 1
 	5) Kernel now executes and loads rootfs from SD partition 2
 

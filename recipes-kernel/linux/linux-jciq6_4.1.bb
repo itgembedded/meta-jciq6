@@ -23,6 +23,6 @@ SRC_URI = "git://github.com/itgembedded/jciq6-linux-v4.1.git;branch=${SRCBRANCH}
            file://defconfig"
 
 #SRCREV is the commit number, must always be updated for each new version
-SRCREV = "e19e6c52ebca7d2cb5481e126c194014bfce4376"
+SRCREV = "257dfebcd8b41508c24abdc3ca97928c3acd2f63"
 
 COMPATIBLE_MACHINE = "(mx6|mx7|imx6q-jciq6)"

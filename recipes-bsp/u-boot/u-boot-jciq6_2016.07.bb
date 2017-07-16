@@ -30,7 +30,7 @@ SRCBRANCH ??= "krogoth"
 SRC_URI = "git://github.com/itgembedded/jciq6-uboot-v2016.07.git;branch=${SRCBRANCH}"
 
 #SRCREV is the commit number, must be always changed for a new version
-SRCREV = "5846f399e9b667a118eecee8ac818dcf8b79ee2e"
+SRCREV = "a7dd9476a20111decd8d57e47620476df9e24522"
 
 S = "${WORKDIR}/git"
 
